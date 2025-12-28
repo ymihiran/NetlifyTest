@@ -4,6 +4,7 @@ const pdf = require("pdf-parse");
 const PDF_URL = "http://ezport.hipg.lk/Localfolder/Berthing/CQYB.pdf";
 const VALID_PORTS = ["Mundra", "Deendayal", "Mumbai", "Pipavav"];
 
+
 exports.handler = async () => {
   try {
     const response = await axios.get(PDF_URL, {
